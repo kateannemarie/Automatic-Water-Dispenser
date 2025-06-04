@@ -8,10 +8,15 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-light">
+  <body class="background">
     <div class="container py-4">
-      <h2 class="mb-4 text-center">Water Dispenser Dashboard</h2>
+      <h2 class="text-center">Water Dispenser Dashboard</h2>
 
       <div class="row g-4">
         <!-- Temperature Card -->
@@ -54,7 +59,7 @@
     </div>
 
     <script>
-      // Simulated fetch (replace with AJAX or fetch to PHP/ESP32 backend)
+      // Simulated fetch (fetch to PHP/ESP32 backend)
       setInterval(() => {
         fetch("get_data.php")
           .then((res) => res.json())
